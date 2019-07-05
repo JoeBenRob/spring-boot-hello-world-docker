@@ -25,7 +25,7 @@ pipeline{
                         steps{
                                 sh "cd /"
 
-				sh "sudo cp /var/lib/jenkins/workspace/${JOB_NAME}/target/hello-world-0.0.1-SNAPSHOT.jar ~/test
+				sh "sudo cp /var/lib/jenkins/workspace/${JOB_NAME}/target/hello-world-0.0.1-SNAPSHOT.jar ~/"
                         }
                 }
         }
