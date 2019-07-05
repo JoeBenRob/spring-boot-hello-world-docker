@@ -25,7 +25,7 @@ pipeline{
                         steps{
                                 sh "cd /"
 
-				sh "sudo scp /var/lib/jenkins/workspace/${JOB_NAME}/target/hello-world-0.0.1-SNAPSHOT.jar  joe@51.141.236.215:~/
+				sh "sudo scp /var/lib/jenkins/workspace/${JOB_NAME}/target/hello-world-0.0.1-SNAPSHOT.jar  ssh joe@51.145.101.218:~/
                         }
                 }
         }
