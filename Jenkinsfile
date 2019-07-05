@@ -1,7 +1,6 @@
 pipeline{
         agent any
         stages{
-
                 stage('---clean---'){
                         steps{
                                 sh "mvn clean"
@@ -25,7 +24,7 @@ pipeline{
 		stage('--deploy--'){
                         steps{
                                 sh "cd /"
-				sh "pwd"
+
 				sh "sudo cp /var/lib/jenkins/workspace/${JOB_NAME}/target/hello-world-0.0.1-SNAPSHOT.jar ~/
                         }
                 }
